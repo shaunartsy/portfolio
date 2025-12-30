@@ -74,7 +74,7 @@
 
 /* 1.2. about IMG BACKGROUND */
 .post-box-photo-about-1 {
-  background-image: url(../img/about/about-1.jpg);
+  background-image: url(../img/about/about-1.png);
 }
 
 .post-box-photo-about-2 {
@@ -1205,6 +1205,7 @@ h1.post-title.post-title-all-main-title {
 }
 
 .image-effect>.hover-effect {
+  display: none !important;
   position: absolute;
   background: rgba(0, 0, 0, .75);
   opacity: 0;
