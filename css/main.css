@@ -3450,3 +3450,42 @@ img.mfp-img {
     visibility: visible;
   }
 }
+
+
+/* 34. Custom Scrollbar */
+#about-lifting,
+#services-lifting,
+#works-lifting,
+#news-lifting,
+#contact-lifting {
+  scrollbar-width: thin;
+  scrollbar-color: #333333 transparent;
+}
+
+#about-lifting::-webkit-scrollbar,
+#services-lifting::-webkit-scrollbar,
+#works-lifting::-webkit-scrollbar,
+#news-lifting::-webkit-scrollbar,
+#contact-lifting::-webkit-scrollbar {
+  width: 1px;
+  /* Modern thin line */
+}
+
+#about-lifting::-webkit-scrollbar-track,
+#services-lifting::-webkit-scrollbar-track,
+#works-lifting::-webkit-scrollbar-track,
+#news-lifting::-webkit-scrollbar-track,
+#contact-lifting::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#about-lifting::-webkit-scrollbar-thumb,
+#services-lifting::-webkit-scrollbar-thumb,
+#works-lifting::-webkit-scrollbar-thumb,
+#news-lifting::-webkit-scrollbar-thumb,
+#contact-lifting::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  /* Dark grey */
+  border-radius: 0;
+  /* Sharp edges */
+}
