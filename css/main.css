@@ -812,6 +812,69 @@ strong {
 }
 
 
+/* 7.1 GSAP Horizontal Scroll */
+.gsap-horizontal-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.gsap-horizontal-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+
+.gsap-horizontal-slide {
+  width: 100%;
+  min-width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  /* Ensure full height */
+}
+
+/* Ensure form containers have dimensions and clear floats */
+#contact-form form,
+.contact-form form {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  /* Clearfix */
+}
+
+/* Overlay z-index for proper stacking */
+#about-lifting,
+#services-lifting,
+#works-lifting,
+#contact-lifting {
+  z-index: 100;
+}
+
+/* Navigation arrows for horizontal scroll */
+.gsap-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.gsap-nav button {
+  background: transparent;
+  border: 1px solid var(--theme);
+  color: var(--theme);
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gsap-nav button:hover {
+  background: var(--theme);
+  color: #fff;
+}
+
+.gsap-nav button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 /* 8. post */
 .post-inner {
   margin: 0;
@@ -918,8 +981,9 @@ h1.post-title.post-title-all-main-title {
 
 @media only screen and (max-width: 995px) {
   .post-block-second {
-    height: auto;
-    overflow: hidden;
+    height: 60vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
