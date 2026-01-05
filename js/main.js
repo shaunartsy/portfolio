@@ -467,7 +467,7 @@ $(function () {
                     "inputError"), s = !0);
             }
         }), !s) {
-            $("form#form input.submit").fadeOut("normal", function () {
+            $("#submit").fadeOut("normal", function () {
                 $(this).parent().append("");
             });
             var r = $(this).serialize();
@@ -475,6 +475,9 @@ $(function () {
                 $("form#form").slideUp("fast", function () {
                     $(this).before('<div class="success">Your email was sent successfully.</div>');
                 });
+            }).fail(function() {
+                $("#submit").fadeIn("normal");
+                $("#form").append('<div class="error">Could not send message. (If testing locally, PHP will not run)</div>');
             });
         }
         return !1;
