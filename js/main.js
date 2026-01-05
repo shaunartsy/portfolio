@@ -476,6 +476,9 @@ $(function () {
                 url: $(this).attr("action"),
                 data: r,
                 dataType: "json",
+                headers: {
+                    "Accept": "application/json"
+                },
                 success: function () {
                     $("form#form").slideUp("fast", function () {
                         $(this).before('<div class="success">Your email was sent successfully.</div>');
