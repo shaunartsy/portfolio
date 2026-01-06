@@ -2447,6 +2447,53 @@ h4.bottom-credits-lead.bottom-credits-lead-color::after {
   margin: -4px auto -2px auto;
 }
 
+.works-project-link {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #39FF14;
+  padding: 8px 16px;
+  margin-top: 8px;
+  border: 1px solid #39FF14;
+  text-decoration: none;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.works-project-link:hover,
+.works-project-link:focus,
+.works-project-link:active {
+  background: #39FF14;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.works-project-link:visited {
+  color: #39FF14;
+  text-decoration: none;
+}
+
+.works-project-link:visited:hover,
+.works-project-link:visited:focus,
+.works-project-link:visited:active {
+  background: #39FF14;
+  color: #000;
+}
+
+
 .works-item-size:hover .works-description,
 .works-item-size:focus .works-description {
   bottom: 5px;
