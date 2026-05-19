@@ -3681,3 +3681,59 @@ img.mfp-img {
   color: #e5e5e5;
   margin-top: 20px;
 }
+
+/* Digital Overlay - View More Button */
+.view-more-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 315px;
+  width: 100%;
+}
+
+.view-more-btn {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #39FF14;
+  padding: 10px 24px;
+  border: 1px solid #39FF14;
+  text-decoration: none;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover,
+.view-more-btn:focus,
+.view-more-btn:active {
+  background: #39FF14;
+  color: #000;
+  text-decoration: none;
+}
+
+.view-more-btn:visited {
+  color: #39FF14;
+  text-decoration: none;
+}
+
+.view-more-btn:visited:hover,
+.view-more-btn:visited:focus,
+.view-more-btn:visited:active {
+  background: #39FF14;
+  color: #000;
+}
